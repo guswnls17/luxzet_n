@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+ul,ol,li{list-style:none}
+img, fieldset{border:none; vertical-align:top}
+legend, caption{position:absolute; top:-9999px; left:-9999px; z-index:-1}
+textarea, button{vertical-align:middle} 
+input, select{vertical-align:middle; background:#fff; border:1px solid #e1e1e1; font-family:'NotoSans-Regular', '맑은 고딕', 'Malgun Gothic', sans-serif; color:#000; letter-spacing:-0.6px; border-radius:0; font-size:16px}
+
+select{padding:5px; height:40px; border:1px solid #e1e1e1; background:#fff;}
+textarea{padding:10px; vertical-align:middle; background:#fff; border:1px solid #e1e1e1; font-family:'NotoSans-Regular', '맑은 고딕', 'Malgun Gothic', sans-serif; color:#555; font-size:16px; letter-spacing:-0.6px; -webkit-appearance: none; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border-radius:0}
+a{text-decoration:none; color:#333;}
+a:hover, a:focus, a:active{text-decoration:none;}
+table{border-collapse:collapse; width:100%;}
+button{background:none; border:none; padding:0; margin:0; cursor:pointer; overflow:visible; white-space: nowrap;  font-size:16px; font-family:'NotoSans-Regular', '맑은 고딕', 'Malgun Gothic', sans-serif;}
+button:active {outline: none}
+button::-moz-focus-inner {padding:0; border:0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {display: block;}
+strong{font-weight:normal; font-family:'NotoSans-Bold'}
+th{font-weight:normal}
+::-webkit-input-placeholder {color:#b1b1b1;}
+:-moz-placeholder {color:#b1b1b1; opacity:1;}
+::-moz-placeholder {color:#b1b1b1; opacity:1;}
+:-ms-input-placeholder {color:#b1b1b1;}
+:placeholder-shown {color:#b1b1b1;}
+
+
+
+.blackBg{position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.6); z-index:1101}
+
+/* header 웹 */
+#headerW{position:absolute; top:0; left:0; width:100%; text-align:center; /*height:70px; */border-bottom:0px solid rgba(255,255,255,0.2); z-index:1000;}
+#headerW h1{position:absolute; top:35px; left:30px; z-index:10;width:150px;}
+#headerW h1 a{display:block; width:120px; height:45px; background:url("/img/slogo.png") no-repeat 50% 50%;}
+#headerW .utilDiv{position:absolute; top:0; right:71px; padding-top:29px;}
+#headerW .utilDiv:after{display:block; content:""; clear:both;}
+#headerW .utilDiv .customerBt{color:#fff; display:block; float:left; position:relative; padding-right:14px; font-size:15px;}
+#headerW .utilDiv .customerBt:after{display:block; content:''; width:1px; height:12px; background:#dadada; opacity:0.5; position:absolute; top:2px; right:0;}
+
+#headerW .utilDiv .langDiv{position:relative; float:left; padding:0 30px 0 13px;}
+#headerW .utilDiv .langDiv > a{display:none; width:23px; height:15px; background:url("/img/eng_btn.png") no-repeat left center;}
+#headerW .utilDiv .langDiv > div{display: none; position:absolute; top:15px; left:0; width:98px; padding:15px 0; background:#fff;}
+#headerW .utilDiv .langDiv > div > a{display:block; font-size:15px; color:#555; line-height:24px; text-align:center;}
+
+#headerW .fmSitBt{position:absolute; top:0; right:0; display:block; width:70px; height:70px; background:url("/img/familysite_bt_on.png") no-repeat 50% 50%;}
+#headerW.subHeader .fmSitBt:before{display:block; content:''; position:absolute; top:0; right:70px; width:1px; height:70px; background:rgba(255,255,255,0.2);}
+
+#headerW .gnbDiv{position:relative; margin:0 auto;margin-left:150px;}
+#headerW .gnbDiv .inner{width:100%; overflow:hidden;}
+#headerW .gnbDiv .inner ul{width:80%;overflow:hidden;vertical-align:middle;height:110px;line-height:110px}
+#headerW .gnbDiv .inner ul li {float:left;color:#fff;padding:0 20px 0 10px}
+#headerW .gnbDiv .inner ul li:first-child{float:left;color:#fff;padding:0 0px 0 0px}
+#headerW .gnbDiv .inner ul li:last-child{float:left;color:#fff;padding:0 0px 0 0px;margin-left:100px}
+
+.allMenu{width:0; position:absolute; top:0; right:0; background:url('/img/allMenu_bg.jpg') no-repeat center center; z-index:1200; box-sizing:border-box; padding-top:70px; display:none; opacity:0}
+.allMenu .logo{position:absolute; top:20px; left:40px; display:block; width:100px; height:38px; background:url("/img/slogo2.png") no-repeat 50% 50%;}
+.allMenu ul{width:1170px; margin:0 auto; overflow:hidden}
+.allMenu ul li{width:20%; float:left; margin-top:10px; box-sizing:border-box; padding-left:0px; text-align:left}
+.allMenu ul li a.oneD{font-size:22px; color:#fff; font-family:'notokr-Bold'; cursor:default}
+.allMenu ul li .twoD{margin-top:45px; display:block}
+.allMenu ul li .twoD a{display:block; color:#fff; font-size:15px; line-height:36px}
+.allMenu ul li .twoD a:hover{color:#0062cb; text-decoration:none}
+.allMenu ul li .twoD a.typeA{cursor:default}
+.allMenu ul li .twoD a.typeA:hover{color:#fff; text-decoration:none}
+.allMenu ul li .thrD{padding-left:20px; border-left:2px solid #ddd; box-sizing:border-box; margin:20px 0}
+.allMenu ul li .thrD a{font-size:15px; line-height:1; padding:7px 0; color:rgba(255, 255, 255, 0.4)}
+.allMenu ul li .thrD a:first-child{padding-top:0}
+.allMenu ul li .thrD a:last-child{padding-bottom:0}
+.allMenu ul li .twoD > a.link{padding-right:26px; background:url('/img/allMenu_twoD_link.png') no-repeat left 75px center}
+
+.allMenu .closeBtn{position:absolute; top:18px; right:18px; display:block; padding:5px; width:24px; height:24px; background:url('/img/allMenu_close.png') no-repeat center center}
+.allMenu .lang{display:block; width:23px; height:15px; background:url("/img/eng_btn.png") no-repeat left center; position:absolute; top:28px; right:110px}
+
+
+/* 미디어쿼리 시작 */
+@media all and (max-width:1240px) {
+	#headerW{height:45px}
+	#headerW h1{top:25px; left:25px}
+	#headerW h1 a{display:block; width:100px; height:38px; background:url("/img/slogo.png") no-repeat 50% 50%;}
+	#headerW .fmSitBt{width:45px; height:45px; background:url('/img/familysite_bt_m.png') no-repeat center center; background-size:32px 20px; margin: -85px 25px 0 0;}
+#headerW.subHeader .fmSitBt:before{display:block; content:''; position:absolute; top:0; right:70px; width:1px; height:70px; background:rgba(255,255,255,0.2);}
+
+#headerW .gnbDiv{position:relative; width:100%; margin:0;padding:0}
+#headerW .gnbDiv .inner{width:100%;margin-top:110px;}
+#headerW .gnbDiv .inner ul{width:100%;float:left;height:30px;line-height:26px;display: contents;}
+#headerW .gnbDiv .inner ul li{float:left;display:block;color:#fff;padding: 0px 0 0 5px;font-size: 0.9rem;}
+#headerW .gnbDiv .inner ul li:first-child{float:left;color:#fff;padding:0 0px 0 10px}
+#headerW .gnbDiv .inner ul li:last-child{float:left;color:#fff;padding: 0px 0 0 5px;margin-left:-30px;margin-top:10px;}
+
+#headerW.on .utilDiv .langDiv > a{background:url("/img/eng_btn_on.png") no-repeat left center;}
+
+#headerW.on .utilDiv .customerBt{color:#555;}
+#headerW.on .utilDiv .customerBt:after{opacity:1;}
+
+	.allMenu{width:0; background:#fff; padding-top:45px}
+	.allMenu .logo{top:25px; left:20px; width:90px; height:34px; background:url("/img/slogo2.png") no-repeat 50% 50%;}
+	.allMenu .closeBtn{width:25px; height:25px;margin: 10px 0 0 0;padding:15px; border:1px solid #e5e5e5; background:url('/img/allMenu_close2.png') no-repeat center center; background-size:15px}
+	.allMenu .lang{width:19px; height:10px; padding:3px; top:15px; right:60px; background:url('/img/allMenu_eng_btn2.png') no-repeat center center; background-size:19px 10px;}
+	.allMenu ul{margin-top:0px; padding:35px 15px 0; border-top:0px solid #e5e5e5; width:100%; box-sizing:border-box}
+	.allMenu ul li{float:none; width:100%; border-bottom:1px solid #ddd; padding:17px 10px 17px 15px}
+	.allMenu ul li a.oneD{color:#555; font-size:17px; line-height:1; padding:0; display:block; font-family:'NotoSans-Medium'; background:url('/img/allMenu_twoD_open.png') no-repeat right center; background-size:contain; cursor:pointer}
+	.allMenu ul li a.oneD:hover{color:#0062cb}
+	.allMenu ul li.on a.oneD{font-family:'NotoSans-Bold'; color:#00448d; background:url('/img/allMenu_twoD_close.png') no-repeat right center; background-size:contain}
+	.allMenu ul li .twoD{margin-top:25px; display:none}
+	.allMenu ul li .twoD a.typeA{cursor:pointer}
+	.allMenu ul li .twoD a.typeA:hover{color:#0062cb}
+	.allMenu ul li .twoD > a{color:#000; font-size:15px; font-family:'NotoSans-Medium'; line-height:1; margin-top:20px}
+	.allMenu ul li .twoD > a:first-child{margin-top:0}
+	.allMenu ul li .thrD{display:none}
+	.allMenu ul li .thrD a{color:#555; font-size:13px; padding:5px 0}
+
+
+
+	.mainSection{position:relative; top:auto !important}
+	#footer.main{position:relative; bottom:auto; left:auto}
+	#wBody{overflow:visible}
+
+
+	.mobileBtn{position:fixed; bottom:15px; right:15px; width:47px; height:104px; z-index:999}
+	.mobileBtn a{position:relative; display:block; width:47px; height:47px}
+	.mobileBtn a img{width:100%}
+	.mobileBtn a.prev{margin-bottom:10px}
+
+
+
+}
